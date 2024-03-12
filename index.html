@@ -1,45 +1,120 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryan DMello</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="icon" href="https://img.icons8.com/external-vitaliy-gorbachev-blue-vitaly-gorbachev/60/000000/external-cat-stay-home-vitaliy-gorbachev-blue-vitaly-gorbachev.png"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/colors.css">
-  </head>
-  <!-- dee2e6 -->
-  <body class="bg-light ls-0-01">
-    <section>
-      <div class="bg-light m-t-20 h-250 text-center">
-        <img height="130px" class="border-circle" src="./assets/images/dp.jpg" alt="Profile picture">
-        <!-- <p class="text-dark m-t-10 font-500">Software Developer</p> -->
-      </div>
+</head>
+<body>
+    <header>
+        <div class="container" style="text-align: center;">
+            <h1>Ryan DMello</h1>
+            <p>Software Engineer</p>
+            <!-- <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav> -->
+        </div>
+    </header>
+
+    <section id="about" class="p-t-20">
+        <div class="container">
+            <img height="300px" class="border-circle" src="./assets/images/ryan-niagra.jpeg" alt="Profile picture">
+            <p>
+                I am a Computer Science Graduate Student with 2+ years of experience as a Full Stack Software Engineer. I have a strong background in backend development and a passion for creating efficient and scalable software solutions.
+            </p>
+
+            <p>
+                At my current role as a Software Engineer Intern, I work on building robust backend systems for weather forecasting, developing APIs, integration with third party services, ensuring security and reliability of backend infrastructure.
+            </p>
+
+            <p>
+                I am mostly drawn towards roles focused on Backend Scalability, Performance Optimizations, Data Management, API Design and Development, System Monitoring and Reliability.
+            </p>
+
+            <p>
+                I am deeply committed to continuous learning and staying abreast of emerging technologies and best practices in backend development. My technical proficiency, coupled with my strong problem-solving skills and collaborative mindset, make me a valuable asset to any team.
+            </p>
+        </div>
     </section>
 
-    <section>
-      <div class="h-350 bg-sy-orange text-light text-center p-20 font-26 font-700">
-        
-      </div>
+    <section id="work-history" class="section">
+        <div class="container">
+            <h2>Work History</h2>
+            <div class="work-item">
+                <h3>Software Engineer Intern</h3>
+                <p>Company Name - Location</p>
+                <p>Date Range</p>
+                <ul>
+                    <li>Description of responsibilities and achievements</li>
+                    <li>Another point about your role</li>
+                    <!-- Add more points as necessary -->
+                </ul>
+            </div>
+            <!-- Add more work history items as necessary -->
+        </div>
     </section>
 
-    <section>
-      <div class="bg-light h-350 text-center">
-      </div>
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="portfolio-items">
+                <!-- <div class="portfolio-item">
+                    <h3>E-commerce Website</h3>
+                    <p>
+                        Developed a full-stack e-commerce platform using React.js for the frontend, Node.js for the backend, and MongoDB for the database.
+                    </p>
+                    <p>
+                        Implemented features such as user authentication, product catalog management, and secure payment processing using Stripe API.
+                    </p>
+                    <a href="https://github.com/ryndm/TrelloClone" target="_blank">View Project</a>
+                </div> -->
+                <div class="portfolio-item">
+                    <h3>Task Management System</h3>
+                    <p>
+                        Developed a comprehensive task management system using Spring Boot and implemented 30+ RESTful APIs.
+                    </p>
+                    <p>
+                        Integrated Apache Kafka for real-time notification services, ensuring users stay updated on task changes
+                    </p>
+                    <a href="https://github.com/ryndm/TrelloClone" target="_blank">View Project</a>
+                </div>
+                <div class="portfolio-item">
+                    <h3>OS Kernel Scheduler</h3>
+                    <p>
+                        Worked with Nachos OS and implemented the round robin scheduling algorithm.
+                    </p>
+                    <a href="https://github.com/ryndm/OS-Projects" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section>
-      <!-- #0E79B2 -->
-      <div class="bg-blue text-light p-20 font-18 font-100 text-center">
-        Contact - rdmello@syr.edu
-      </div>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me through the form below...</p>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </section>
 
-    <!-- Cloudflare Web Analytics -->
-      <script defer src='https://static.cloudflareinsights.com/beacon.min.js' 
-        data-cf-beacon='{"token": "474f6dfe3eef427ca5dab85f97406cc6"}'>
-      </script>
-    <!-- End Cloudflare Web Analytics -->
-  </body>
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ryandmello11/" target="_blank" rel="noopener noreferrer"><img src="./assets/images/LI-Logo.png" alt="LinkedIn"></a>
+                <a href="https://github.com/ryndm" target="_blank" rel="noopener noreferrer"><img src="./assets/images/GitHub_Logo_White.png" alt="GitHub"></a>
+            </div>
+            <p>&copy; 2024 Ryan DMello</p>
+        </div>
+    </footer>
+</body>
 </html>
-<a style="display: none;" href="https://icons8.com/icon/3mcTTzeJskNH/cat">Cat icon by Icons8</a>
