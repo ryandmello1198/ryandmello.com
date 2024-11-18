@@ -3,118 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ryan DMello</title>
+    <title>Ryan DMello - Software Engineer</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container" style="text-align: center;">
-            <h1>Ryan DMello</h1>
-            <p>Software Engineer</p>
-            <!-- <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav> -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="profile-section">
+                    <img src="./assets/images/ryan-niagra.jpeg" alt="profile" class="profile-img">
+                </div>
+                <div>
+                    <h1 class="display-4 fw-bold mb-3">Ryan DMello</h1>
+                    <h2 class="h3 mb-4 text-light-emphasis">Software Engineer</h2>
+                    <div class="social-links">
+                        <a href="https://github.com/ryndm"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ryandmello11/"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:dmelloryan11@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section id="about" class="p-t-20">
+    <section class="py-5 bg-white">
         <div class="container">
-            <img height="300px" class="border-circle" src="./assets/images/ryan-niagra.jpeg" alt="Profile picture">
-            <p>
-                I am a Computer Science Graduate Student with 2+ years of experience as a Full Stack Software Engineer. I have a strong background in backend development and a passion for creating efficient and scalable software solutions.
-            </p>
-
-            <p>
-                At my current role as a Software Engineer Intern, I work on building robust backend systems for weather forecasting, developing APIs, integration with third party services, ensuring security and reliability of backend infrastructure.
-            </p>
-
-            <p>
-                I am mostly drawn towards roles focused on Backend Scalability, Performance Optimizations, Data Management, API Design and Development, System Monitoring and Reliability.
-            </p>
-
-            <p>
-                I am deeply committed to continuous learning and staying abreast of emerging technologies and best practices in backend development. My technical proficiency, coupled with my strong problem-solving skills and collaborative mindset, make me a valuable asset to any team.
-            </p>
+            <h2 class="h2 fw-bold mb-4">About Me</h2>
+            <p class="lead text-secondary">Backend engineer with 3+ years of experience building scalable distributed systems. Passionate about system design, performance optimization, and clean code. Currently focusing on microservices architecture and cloud-native applications.</p>
         </div>
     </section>
 
-    <section id="work-history" class="section">
+    <section class="py-5 bg-light">
         <div class="container">
-            <h2>Work History</h2>
-            <div class="work-item">
-                <h3>Software Engineer Intern</h3>
-                <p>Company Name - Location</p>
-                <p>Date Range</p>
-                <ul>
-                    <li>Description of responsibilities and achievements</li>
-                    <li>Another point about your role</li>
-                    <!-- Add more points as necessary -->
+            <h2 class="h2 fw-bold mb-4">Skills</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="h5 fw-bold mb-3">Languages</h3>
+                            <div>
+                                <span class="skill-badge">Python</span>
+                                <span class="skill-badge">C/C++</span>
+                                <span class="skill-badge">Java</span>
+                                <span class="skill-badge">Javascript</span>
+                                <span class="skill-badge">Typescript</span>
+                                <span class="skill-badge">HTML/CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="h5 fw-bold mb-3">Infrastructure & Tools</h3>
+                            <div>
+                                <span class="skill-badge">AWS</span>
+                                <span class="skill-badge">Oracle Cloud Infrastructure</span>
+                                <span class="skill-badge">Docker</span>
+                                <span class="skill-badge">Kubernetes</span>
+                                <span class="skill-badge">Jenkins</span>
+                                <span class="skill-badge">Grafana</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="h5 fw-bold mb-3">Databases</h3>
+                            <div>
+                                <span class="skill-badge">MySQL</span>
+                                <span class="skill-badge">MongoDB</span>
+                                <span class="skill-badge">Redis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="h2 fw-bold mb-4">Experience</h2>
+            
+            <div class="experience-item">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3 class="h4 fw-bold mb-1">Software Engineer</h3>
+                        <p class="mb-2">
+                            <span class="experience-company"><a href="https://truweathersolutions.com/" target="_blank">TruWeather Solutions</a></span> • 
+                            <span class="experience-date">Sep 2022 - Present</span>
+                        </p>
+                    </div>
+                </div>
+                <ul class="experience-list">
+                    <li>Spearheaded the migration of legacy backend systems to containerized microservices using Docker and AWS ECS, boosting scalability, simplifying deployments, and cutting API response time by 20%.</li>
+                    <li>Consolidated two MySQL databases on AWS RDS into one, reducing operating costs by ~50%, easing maintenance, and streamlining backup processes, enhancing overall system efficiency.</li>
+                    <li>Conducted comparative testing of backend services on AWS and Oracle Cloud using Kubernetes and AWS ECS, identifying potential cost savings of 15%.</li>
+                    <li>Streamlined error handling for backend services in SailsJs by creating a centralized error handler, eliminating the need for verbose code, and simplifying integration with Datadog.</li>
                 </ul>
             </div>
-            <!-- Add more work history items as necessary -->
+            
+            <div class="experience-item">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3 class="h4 fw-bold mb-1">Software Engineer</h3>
+                        <p class="mb-2">
+                            <span class="experience-company"><a href="https://utopiatech.in/" target="_blank">Utopiatech</a></span> • 
+                            <span class="experience-date">Jul 2020 - Jul 2022</span>
+                        </p>
+                    </div>
+                </div>
+                <ul class="experience-list">
+                    <li>Engineered and launched over 50 new features for an IoT device management web application using Node.js and Angular, improving functionality and user experience, and expanding the product's applications from smart lighting to security systems in ATMs, leading to a 25% increase in business integration opportunities.</li>
+                    <li>Refactored the React Native mobile application codebase to incorporate modular components and added key features from the web application, resulting in a 25% increase in mobile user adoption.</li>
+                    <li>Designed and built a full-stack web and mobile application for asset tracking and maintenance of IoT devices, leveraging Angular, ExpressJS, MongoDB, and React Native, streamlining processes and saving over 30 hours of manual labor monthly.</li>
+                    <li>Integrated Redis DB for caching IoT device connection information in a Node.js server, supporting over 10,000 socket connections and achieving statelessness for the application, enabling horizontal scaling.</li>
+                    <li>Deployed the Mosquitto MQTT Broker, replacing TCP connections, enhancing reliability by 40%, enabling distributed deployments, and supporting 25% more IoT device connections.</li>
+                    <li>Managed feature development projects from initiation to completion, overseeing timelines, resources, and deliverables effectively, leading to a 95% on-time delivery rate.</li>
+                    <li>Facilitated regular ideation sessions with product managers, gathering feedback and refining feature concepts, resulting in a feature roadmap that met customer needs, increasing customer satisfaction scores by 15%.</li>
+                </ul>
+            </div>
         </div>
     </section>
 
-    <section id="portfolio" class="section">
+    <section class="py-5 bg-white">
         <div class="container">
-            <h2>Projects</h2>
-            <div class="portfolio-items">
-                <!-- <div class="portfolio-item">
-                    <h3>E-commerce Website</h3>
-                    <p>
-                        Developed a full-stack e-commerce platform using React.js for the frontend, Node.js for the backend, and MongoDB for the database.
-                    </p>
-                    <p>
-                        Implemented features such as user authentication, product catalog management, and secure payment processing using Stripe API.
-                    </p>
-                    <a href="https://github.com/ryndm/TrelloClone" target="_blank">View Project</a>
+            <h2 class="h2 fw-bold mb-4">Featured Projects</h2>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="project-card">
+                        <h3 class="h5 fw-bold mb-3">Distributed Key-Value Store</h3>
+                        <p class="text-secondary mb-3">This project implements a distributed key-value store using a Raft consensus algorithm. It's designed to demonstrate advanced concepts in distributed systems, including consensus, load balancing, data persistence, and security features.</p>
+                        <div class="mb-3">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Caching</span>
+                            <span class="tech-badge">Load Balancing</span>
+                        </div>
+                        <a href="https://github.com/ryndm/distributed-key-value-store" class="text-decoration-none"><i class="fab fa-github me-2"></i>View Code</a>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-4">
+                    <div class="project-card">
+                        <h3 class="h5 fw-bold mb-3">API Gateway Service</h3>
+                        <p class="text-secondary mb-3">Built a scalable API gateway handling 1M+ daily requests, implementing rate limiting, auth, and load balancing.</p>
+                        <div class="mb-3">
+                            <span class="tech-badge">Go</span>
+                            <span class="tech-badge">Kubernetes</span>
+                            <span class="tech-badge">gRPC</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                        </div>
+                        <a href="#" class="text-decoration-none"><i class="fab fa-github me-2"></i>View Code</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="project-card">
+                        <h3 class="h5 fw-bold mb-3">Event Processing Pipeline</h3>
+                        <p class="text-secondary mb-3">Designed and implemented a real-time event processing pipeline handling 10K events/second using Apache Kafka.</p>
+                        <div class="mb-3">
+                            <span class="tech-badge">Kafka</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">MongoDB</span>
+                            <span class="tech-badge">ELK Stack</span>
+                        </div>
+                        <a href="#" class="text-decoration-none"><i class="fab fa-github me-2"></i>View Code</a>
+                    </div>
                 </div> -->
-                <div class="portfolio-item">
-                    <h3>Task Management System</h3>
-                    <p>
-                        Developed a comprehensive task management system using Spring Boot and implemented 30+ RESTful APIs.
-                    </p>
-                    <p>
-                        Integrated Apache Kafka for real-time notification services, ensuring users stay updated on task changes
-                    </p>
-                    <a href="https://github.com/ryndm/TrelloClone" target="_blank">View Project</a>
-                </div>
-                <div class="portfolio-item">
-                    <h3>OS Kernel Scheduler</h3>
-                    <p>
-                        Worked with Nachos OS and implemented the round robin scheduling algorithm.
-                    </p>
-                    <a href="https://github.com/ryndm/OS-Projects" target="_blank">View Project</a>
-                </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section">
+    <section class="contact-section text-center">
         <div class="container">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out to me through the form below...</p>
-            <form action="#" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+            <h2 class="h2 fw-bold mb-4">Get In Touch</h2>
+            <p class="mb-4">I'm always interested in hearing about new projects and opportunities.</p>
+            <a href="mailto:dmelloryan11@gmail.com" class="btn btn-light btn-lg">
+                <i class="fas fa-envelope me-2"></i>Email Me
+            </a>
         </div>
     </section>
 
-    <footer>
+    <footer class="footer text-center">
         <div class="container">
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/ryandmello11/" target="_blank" rel="noopener noreferrer"><img src="./assets/images/LI-Logo.png" alt="LinkedIn"></a>
-                <a href="https://github.com/ryndm" target="_blank" rel="noopener noreferrer"><img src="./assets/images/GitHub_Logo_White.png" alt="GitHub"></a>
-            </div>
-            <p>&copy; 2024 Ryan DMello</p>
+            <p class="mb-0">Built using Claude 3.5 Sonnet</p>
         </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
